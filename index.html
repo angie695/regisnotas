@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <title>Registo de notas</title>
+
+</head>
+
+
+<body>
+    <header>
+        <a href="#" class="sena">
+            <img src="sena.png">
+           </a>
+    </header>
+    <br>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                Resgistro de notas del los estudiantes: Ficha 2675808
+            </div>
+            <div class="card-body">
+            </div>
+            <form>
+                <div class="row">
+                    <div class="col-md-4"> 
+                        <label>Identificación:</label>
+                        <input type="number" id="Ident" class="form-control" title="Ingrese identificacion estudiante">
+                    </div> 
+                
+                    <div class="col-md-4">
+                        <label>Nombres:</label>
+                        <input type="text" id="nomtx" class="form-control" title="Ingrese nombres estudiante">
+                    </div>
+                    <div class="col-md-4">
+                        <label>Apellidos</label>
+                        <input type="text" id="apeltx" class="form-control" title="Ingrese apellidos estudiante">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="card-header">
+                        Notas de las evidencias de productos
+                        <div class="cold-md-4">
+                            <br>
+                            <label>Nota Evidencia # 1:</label>
+                            <input type="number" id="not1" class="form-control" title="Ingrese nota de producto 1">
+                        </div>
+                        <div class="cold-md-4">
+                            <label>Nota Evidencia # 2:</label>
+                            <input type="number" id="not2" class="form-control" title="Ingrese nota de producto 2">
+                        </div>
+                        <div class="cold-md-4">
+                            <label>Nota Evidencia # 3:</label>
+                            <input type="number" id="not3" class="form-control" title="Ingrese nota de producto 3">
+                        </div>
+                        <div class="cold-md-4">
+                            <label>promedio:</label>
+                            <input type="text" id="promprod" class="form-control" title="Promedio notas evidencias producto" readonly>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="card-header">
+                            Notas evidencias de desempeño
+                            <div class="cold-md-4">
+                                <br>
+                                <label>Nota Evidencia # 1:</label>
+                                <input type="number" id="notd1" class="form-control" title="Ingrese nota de desempeño 1">
+                                <div class="cold-md-4">
+                                    <label>Nota Evidencia # 2:</label> 
+                                    <input type="number" id="notd2" class="form-control" title="Ingrese nota de desempeño 2">
+                                    <div class="cold-md-4"><br></br><br>
+                                        <label>promedio:</label>
+                                        <input type="text" id="promprodñ" class="form-control" title="Promedio notas evidencias desempeño" readonly>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                <div class="row">
+                 <div class="card-header">
+                 Notas evidencias de Conocimiento
+                 <div class="cold-md-4">
+                    <br>
+                    <label>Nota Evidencia # 1:</label>
+                    <input type="number" id="notc1" class="form-control" title="Ingrese nota de Conocimiento 1">
+                    <div class="cold-md-4"><br></br><br></br><br></br>
+                        <label>promedio:</label>
+                        <input type="text" id="promprodc" class="form-control" title="Promedio notas evidencias Conocimiento" readonly>
+                   </div>     
+                </div>
+            </div>
+            
+        <div class="row10">
+            <div class="cold-md-4"></div>
+            <label>Nota definitiva</label>
+            <input type="text" id="notdefi" class="form-control" title="Nota definitiva" readonly>
+        </div>
+        <div>
+        </form>
+        <div class="row">
+            <div class="col-md-12">
+                <button type="button" class="btn btn-primary" onclick="calcularNotas();">Calcular</button>
+                <button type="button" class="btn btn-danger" onclick="LimpiarCampos()">Limpiar</button>
+            </div>
+</div>
+
+
+
+
+
+                  
+
+</body>
+<script src="notas.js"></script>
+<link rel="stylesheet" href="diseño.css">
+</html>

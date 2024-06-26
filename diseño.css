@@ -1,0 +1,20 @@
+body{
+    font-family: "Noto Serif", serif;
+    background-color: rgb(184, 123, 235);
+}
+.col-md-12{
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    bottom: -250px;
+    left: -150px;
+}
+.sena{
+    display: flex;
+    align-items: center;
+}
+.sena img{
+    height: 70px;
+    right: -20px;
+
+}
